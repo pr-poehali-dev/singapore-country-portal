@@ -165,29 +165,19 @@ const Index = () => {
           </div>
 
           <div className="mt-16 grid md:grid-cols-2 gap-8 animate-fade-in">
-            <Card className="border-2 border-primary/20 hover:border-primary transition-all hover:shadow-xl">
+            <Card>
               <CardContent className="p-8">
-                <div className="flex items-center gap-4 mb-4">
-                  <div className="p-3 bg-gradient-to-br from-primary to-accent rounded-2xl">
-                    <Icon name="Image" size={32} className="text-white" />
-                  </div>
-                  <h3 className="text-2xl font-heading font-bold">Галерея</h3>
-                </div>
-                <p className="text-muted-foreground">
+                <h3 className="text-2xl font-heading font-bold mb-4">Галерея</h3>
+                <p>
                   Яркие фотографии достопримечательностей Сингапура с возможностью фильтрации по городам
                 </p>
               </CardContent>
             </Card>
 
-            <Card className="border-2 border-secondary/20 hover:border-secondary transition-all hover:shadow-xl">
+            <Card>
               <CardContent className="p-8">
-                <div className="flex items-center gap-4 mb-4">
-                  <div className="p-3 bg-gradient-to-br from-secondary to-accent rounded-2xl">
-                    <Icon name="Video" size={32} className="text-white" />
-                  </div>
-                  <h3 className="text-2xl font-heading font-bold">Медиа</h3>
-                </div>
-                <p className="text-muted-foreground">
+                <h3 className="text-2xl font-heading font-bold mb-4">Медиа</h3>
+                <p>
                   Видео и аудио файлы о культуре и жизни в современном Сингапуре
                 </p>
               </CardContent>
@@ -198,9 +188,9 @@ const Index = () => {
             <h3 className="text-3xl font-heading font-bold mb-8 text-center">Полезные ссылки</h3>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {links.map((linkGroup, idx) => (
-                <Card key={idx} className="hover:shadow-lg transition-all">
+                <Card key={idx}>
                   <CardContent className="p-6">
-                    <h4 className="font-heading font-semibold text-lg mb-4 text-primary">
+                    <h4 className="font-heading font-semibold text-lg mb-4">
                       {linkGroup.category}
                     </h4>
                     <div className="space-y-2">
@@ -210,10 +200,9 @@ const Index = () => {
                           href={link.url}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="flex items-center gap-2 text-sm hover:text-primary transition-colors group"
+                          className="flex items-center gap-2 text-sm hover:underline"
                         >
-                          <Icon name="ExternalLink" size={14} className="group-hover:scale-110 transition-transform" />
-                          <span className="group-hover:underline">{link.name}</span>
+                          <span>{link.name}</span>
                         </a>
                       ))}
                     </div>
@@ -243,20 +232,17 @@ const Index = () => {
             </div>
             <div className="grid md:grid-cols-3 gap-6">
               {filteredImages.map((image) => (
-                <Card key={image.id} className="overflow-hidden hover:shadow-2xl transition-all group">
+                <Card key={image.id} className="overflow-hidden">
                   <div className="relative h-64 overflow-hidden">
                     <img 
                       src={image.url} 
                       alt={image.title}
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                      className="w-full h-full object-cover"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-                    <Badge className="absolute top-4 right-4 bg-white/90 text-primary">
-                      {image.city}
-                    </Badge>
                   </div>
                   <CardContent className="p-4">
-                    <h4 className="font-heading font-semibold text-lg">{image.title}</h4>
+                    <h4 className="font-semibold">{image.title}</h4>
+                    <p className="text-sm text-gray-600">{image.city}</p>
                   </CardContent>
                 </Card>
               ))}
@@ -271,9 +257,9 @@ const Index = () => {
             src="https://cdn.poehali.dev/projects/453e926c-caed-4d4b-a2b0-7ead4278a171/files/6d0c0797-706d-4214-a2a3-b5cf3bfb4ae2.jpg"
             alt="Background"
             className="w-full h-full object-cover"
-            style={{ filter: 'blur(8px)' }}
+            style={{ filter: 'blur(5px) brightness(1.1)' }}
           />
-          <div className="absolute inset-0 bg-white/80" />
+          <div className="absolute inset-0 bg-white/65" />
         </div>
         <div className="container mx-auto max-w-4xl relative z-10">
           <div className="text-center">
@@ -301,9 +287,9 @@ const Index = () => {
             src="https://cdn.poehali.dev/projects/453e926c-caed-4d4b-a2b0-7ead4278a171/files/2367590a-f601-46fb-9d8b-68d2f95598b8.jpg"
             alt="Background"
             className="w-full h-full object-cover"
-            style={{ filter: 'blur(8px)' }}
+            style={{ filter: 'blur(5px) brightness(1.1)' }}
           />
-          <div className="absolute inset-0 bg-white/80" />
+          <div className="absolute inset-0 bg-white/65" />
         </div>
         <div className="container mx-auto max-w-4xl relative z-10">
           <h2 className="text-4xl font-heading font-bold mb-8 text-center">Исторические сведения</h2>
@@ -329,9 +315,9 @@ const Index = () => {
             src="https://cdn.poehali.dev/projects/453e926c-caed-4d4b-a2b0-7ead4278a171/files/18bee093-cc36-4ff8-87ca-57a6b47b058c.jpg"
             alt="Background"
             className="w-full h-full object-cover"
-            style={{ filter: 'blur(8px)' }}
+            style={{ filter: 'blur(5px) brightness(1.1)' }}
           />
-          <div className="absolute inset-0 bg-white/80" />
+          <div className="absolute inset-0 bg-white/65" />
         </div>
         <div className="container mx-auto relative z-10">
           <h2 className="text-4xl font-heading font-bold mb-12 text-center">Города для посещения</h2>
@@ -362,9 +348,9 @@ const Index = () => {
             src="https://cdn.poehali.dev/projects/453e926c-caed-4d4b-a2b0-7ead4278a171/files/6d0c0797-706d-4214-a2a3-b5cf3bfb4ae2.jpg"
             alt="Background"
             className="w-full h-full object-cover"
-            style={{ filter: 'blur(8px)' }}
+            style={{ filter: 'blur(5px) brightness(1.1)' }}
           />
-          <div className="absolute inset-0 bg-white/80" />
+          <div className="absolute inset-0 bg-white/65" />
         </div>
         <div className="container mx-auto relative z-10">
           <h2 className="text-4xl font-heading font-bold mb-12 text-center">Кухня Сингапура</h2>
@@ -392,9 +378,9 @@ const Index = () => {
             src="https://cdn.poehali.dev/projects/453e926c-caed-4d4b-a2b0-7ead4278a171/files/2367590a-f601-46fb-9d8b-68d2f95598b8.jpg"
             alt="Background"
             className="w-full h-full object-cover"
-            style={{ filter: 'blur(8px)' }}
+            style={{ filter: 'blur(5px) brightness(1.1)' }}
           />
-          <div className="absolute inset-0 bg-white/80" />
+          <div className="absolute inset-0 bg-white/65" />
         </div>
         <div className="container mx-auto max-w-4xl relative z-10">
           <h2 className="text-4xl font-heading font-bold mb-8 text-center">Музыка и кинематограф</h2>
@@ -426,9 +412,9 @@ const Index = () => {
             src="https://cdn.poehali.dev/projects/453e926c-caed-4d4b-a2b0-7ead4278a171/files/18bee093-cc36-4ff8-87ca-57a6b47b058c.jpg"
             alt="Background"
             className="w-full h-full object-cover"
-            style={{ filter: 'blur(8px)' }}
+            style={{ filter: 'blur(5px) brightness(1.1)' }}
           />
-          <div className="absolute inset-0 bg-white/80" />
+          <div className="absolute inset-0 bg-white/65" />
         </div>
         <div className="container mx-auto relative z-10">
           <h2 className="text-4xl font-heading font-bold mb-12 text-center">Главные праздники</h2>
@@ -452,9 +438,9 @@ const Index = () => {
             src="https://cdn.poehali.dev/projects/453e926c-caed-4d4b-a2b0-7ead4278a171/files/6d0c0797-706d-4214-a2a3-b5cf3bfb4ae2.jpg"
             alt="Background"
             className="w-full h-full object-cover"
-            style={{ filter: 'blur(8px)' }}
+            style={{ filter: 'blur(5px) brightness(1.1)' }}
           />
-          <div className="absolute inset-0 bg-white/80" />
+          <div className="absolute inset-0 bg-white/65" />
         </div>
         <div className="container mx-auto max-w-4xl relative z-10">
           <div className="text-center mb-8">
