@@ -61,10 +61,10 @@ const Index = () => {
   ];
 
   const dishes = [
-    { name: 'Чили краб', description: 'Национальное блюдо - краб в остром томатном соусе', emoji: '🦀' },
-    { name: 'Хайнаньский рис с курицей', description: 'Нежная курица с ароматным рисом', emoji: '🍗' },
-    { name: 'Лакса', description: 'Пряный суп-лапша на кокосовом молоке', emoji: '🍜' },
-    { name: 'Сатай', description: 'Шашлычки из курицы или говядины с арахисовым соусом', emoji: '🍢' }
+    { name: 'Чили краб', description: 'Национальное блюдо - краб в остром томатном соусе' },
+    { name: 'Хайнаньский рис с курицей', description: 'Нежная курица с ароматным рисом' },
+    { name: 'Лакса', description: 'Пряный суп-лапша на кокосовом молоке' },
+    { name: 'Сатай', description: 'Шашлычки из курицы или говядины с арахисовым соусом' }
   ];
 
   const holidays = [
@@ -120,7 +120,7 @@ const Index = () => {
     : galleryImages.filter(img => img.category === activeFilter);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-50 via-white to-orange-50">
+    <div className="min-h-screen bg-white">
       <nav className="fixed top-0 left-0 right-0 bg-white/90 backdrop-blur-md shadow-md z-50 animate-slide-in">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between py-4">
@@ -265,23 +265,29 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="developer" className="py-16 px-4 bg-white">
-        <div className="container mx-auto max-w-4xl">
-          <div className="text-center animate-fade-in">
-            <div className="inline-block p-4 bg-gradient-to-br from-primary to-accent rounded-full mb-6">
-              <Icon name="GraduationCap" size={48} className="text-white" />
-            </div>
+      <section id="developer" className="py-16 px-4 relative">
+        <div className="absolute inset-0 z-0">
+          <img 
+            src="https://cdn.poehali.dev/projects/453e926c-caed-4d4b-a2b0-7ead4278a171/files/6d0c0797-706d-4214-a2a3-b5cf3bfb4ae2.jpg"
+            alt="Background"
+            className="w-full h-full object-cover"
+            style={{ filter: 'blur(8px)' }}
+          />
+          <div className="absolute inset-0 bg-white/80" />
+        </div>
+        <div className="container mx-auto max-w-4xl relative z-10">
+          <div className="text-center">
             <h2 className="text-4xl font-heading font-bold mb-6">О разработчике</h2>
-            <Card className="text-left border-2 border-primary/20">
+            <Card className="text-left">
               <CardContent className="p-8">
                 <p className="text-lg mb-4">
-                  <strong className="text-primary">Разработчик:</strong> Захар Куратов
+                  <strong>Разработчик:</strong> Захар Куратов
                 </p>
                 <p className="text-lg mb-4">
-                  <strong className="text-primary">Учебное заведение:</strong> Хакасский государственный университет
+                  <strong>Учебное заведение:</strong> Хакасский государственный университет
                 </p>
                 <p className="text-lg">
-                  <strong className="text-primary">Группа:</strong> 225
+                  <strong>Группа:</strong> 225
                 </p>
               </CardContent>
             </Card>
@@ -289,13 +295,22 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="info" className="py-16 px-4">
-        <div className="container mx-auto max-w-4xl animate-fade-in">
+      <section id="info" className="py-16 px-4 relative">
+        <div className="absolute inset-0 z-0">
+          <img 
+            src="https://cdn.poehali.dev/projects/453e926c-caed-4d4b-a2b0-7ead4278a171/files/2367590a-f601-46fb-9d8b-68d2f95598b8.jpg"
+            alt="Background"
+            className="w-full h-full object-cover"
+            style={{ filter: 'blur(8px)' }}
+          />
+          <div className="absolute inset-0 bg-white/80" />
+        </div>
+        <div className="container mx-auto max-w-4xl relative z-10">
           <h2 className="text-4xl font-heading font-bold mb-8 text-center">Исторические сведения</h2>
-          <Card className="border-2 border-primary/20">
+          <Card>
             <CardContent className="p-8 space-y-4 text-lg leading-relaxed">
               <p>
-                <strong className="text-primary">Сингапур</strong> — город-государство в Юго-Восточной Азии, основанный в 1819 году сэром Стэмфордом Раффлзом. С момента обретения независимости в 1965 году Сингапур превратился из небольшого торгового порта в один из самых развитых и богатых городов мира.
+                <strong>Сингапур</strong> — город-государство в Юго-Восточной Азии, основанный в 1819 году сэром Стэмфордом Раффлзом. С момента обретения независимости в 1965 году Сингапур превратился из небольшого торгового порта в один из самых развитых и богатых городов мира.
               </p>
               <p>
                 Благодаря стратегическому расположению на перекрестке торговых путей, Сингапур стал важным финансовым центром Азии. Сегодня это многонациональное государство, где гармонично сосуществуют китайская, малайская, индийская и европейская культуры.
@@ -308,25 +323,31 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="cities" className="py-16 px-4 bg-gradient-to-br from-primary/5 to-accent/5">
-        <div className="container mx-auto animate-fade-in">
+      <section id="cities" className="py-16 px-4 relative">
+        <div className="absolute inset-0 z-0">
+          <img 
+            src="https://cdn.poehali.dev/projects/453e926c-caed-4d4b-a2b0-7ead4278a171/files/18bee093-cc36-4ff8-87ca-57a6b47b058c.jpg"
+            alt="Background"
+            className="w-full h-full object-cover"
+            style={{ filter: 'blur(8px)' }}
+          />
+          <div className="absolute inset-0 bg-white/80" />
+        </div>
+        <div className="container mx-auto relative z-10">
           <h2 className="text-4xl font-heading font-bold mb-12 text-center">Города для посещения</h2>
           <div className="grid md:grid-cols-3 gap-8">
             {cities.map((city, idx) => (
-              <Card key={idx} className="border-2 border-primary/20 hover:border-primary transition-all hover:shadow-xl">
+              <Card key={idx}>
                 <CardContent className="p-6">
-                  <div className="flex items-center gap-3 mb-4">
-                    <Icon name="MapPin" size={28} className="text-primary" />
-                    <h3 className="text-2xl font-heading font-bold">{city.name}</h3>
-                  </div>
-                  <p className="text-muted-foreground mb-6">{city.description}</p>
-                  <div className="space-y-2">
-                    <p className="font-semibold text-sm text-primary">Достопримечательности:</p>
-                    {city.attractions.map((attraction, aIdx) => (
-                      <Badge key={aIdx} variant="secondary" className="mr-2 mb-2">
-                        {attraction}
-                      </Badge>
-                    ))}
+                  <h3 className="text-2xl font-heading font-bold mb-4">{city.name}</h3>
+                  <p className="mb-6">{city.description}</p>
+                  <div>
+                    <p className="font-semibold text-sm mb-2">Достопримечательности:</p>
+                    <ul className="list-disc list-inside space-y-1">
+                      {city.attractions.map((attraction, aIdx) => (
+                        <li key={aIdx} className="text-sm">{attraction}</li>
+                      ))}
+                    </ul>
                   </div>
                 </CardContent>
               </Card>
@@ -335,21 +356,29 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="cuisine" className="py-16 px-4">
-        <div className="container mx-auto animate-fade-in">
+      <section id="cuisine" className="py-16 px-4 relative">
+        <div className="absolute inset-0 z-0">
+          <img 
+            src="https://cdn.poehali.dev/projects/453e926c-caed-4d4b-a2b0-7ead4278a171/files/6d0c0797-706d-4214-a2a3-b5cf3bfb4ae2.jpg"
+            alt="Background"
+            className="w-full h-full object-cover"
+            style={{ filter: 'blur(8px)' }}
+          />
+          <div className="absolute inset-0 bg-white/80" />
+        </div>
+        <div className="container mx-auto relative z-10">
           <h2 className="text-4xl font-heading font-bold mb-12 text-center">Кухня Сингапура</h2>
           <div className="max-w-4xl mx-auto mb-8">
-            <p className="text-lg text-center text-muted-foreground">
+            <p className="text-lg text-center">
               Сингапурская кухня — это уникальное сочетание китайских, малайских, индийских и европейских кулинарных традиций. Хокер-центры (hawker centres) — главные места, где можно попробовать настоящую уличную еду.
             </p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
             {dishes.map((dish, idx) => (
-              <Card key={idx} className="text-center hover:shadow-xl transition-all hover:scale-105">
+              <Card key={idx}>
                 <CardContent className="p-6">
-                  <div className="text-6xl mb-4">{dish.emoji}</div>
                   <h3 className="text-xl font-heading font-bold mb-2">{dish.name}</h3>
-                  <p className="text-sm text-muted-foreground">{dish.description}</p>
+                  <p className="text-sm">{dish.description}</p>
                 </CardContent>
               </Card>
             ))}
@@ -357,28 +386,31 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="culture" className="py-16 px-4 bg-gradient-to-br from-secondary/5 to-accent/5">
-        <div className="container mx-auto max-w-4xl animate-fade-in">
+      <section id="culture" className="py-16 px-4 relative">
+        <div className="absolute inset-0 z-0">
+          <img 
+            src="https://cdn.poehali.dev/projects/453e926c-caed-4d4b-a2b0-7ead4278a171/files/2367590a-f601-46fb-9d8b-68d2f95598b8.jpg"
+            alt="Background"
+            className="w-full h-full object-cover"
+            style={{ filter: 'blur(8px)' }}
+          />
+          <div className="absolute inset-0 bg-white/80" />
+        </div>
+        <div className="container mx-auto max-w-4xl relative z-10">
           <h2 className="text-4xl font-heading font-bold mb-8 text-center">Музыка и кинематограф</h2>
           <div className="grid md:grid-cols-2 gap-8">
-            <Card className="border-2 border-secondary/20">
+            <Card>
               <CardContent className="p-8">
-                <div className="flex items-center gap-3 mb-4">
-                  <Icon name="Music" size={32} className="text-secondary" />
-                  <h3 className="text-2xl font-heading font-bold">Музыка</h3>
-                </div>
+                <h3 className="text-2xl font-heading font-bold mb-4">Музыка</h3>
                 <p className="leading-relaxed">
                   Сингапурская музыкальная сцена разнообразна: от традиционных китайских и малайских мелодий до современного поп-рока и электронной музыки. Популярные артисты: Stefanie Sun, JJ Lin, The Sam Willows.
                 </p>
               </CardContent>
             </Card>
 
-            <Card className="border-2 border-accent/20">
+            <Card>
               <CardContent className="p-8">
-                <div className="flex items-center gap-3 mb-4">
-                  <Icon name="Film" size={32} className="text-accent" />
-                  <h3 className="text-2xl font-heading font-bold">Кинематограф</h3>
-                </div>
+                <h3 className="text-2xl font-heading font-bold mb-4">Кинематограф</h3>
                 <p className="leading-relaxed">
                   Сингапурское кино известно такими фильмами как "Crazy Rich Asians" (2018). Ежегодно проводится Singapore International Film Festival, привлекающий режиссеров со всего мира.
                 </p>
@@ -388,23 +420,25 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="holidays" className="py-16 px-4">
-        <div className="container mx-auto animate-fade-in">
+      <section id="holidays" className="py-16 px-4 relative">
+        <div className="absolute inset-0 z-0">
+          <img 
+            src="https://cdn.poehali.dev/projects/453e926c-caed-4d4b-a2b0-7ead4278a171/files/18bee093-cc36-4ff8-87ca-57a6b47b058c.jpg"
+            alt="Background"
+            className="w-full h-full object-cover"
+            style={{ filter: 'blur(8px)' }}
+          />
+          <div className="absolute inset-0 bg-white/80" />
+        </div>
+        <div className="container mx-auto relative z-10">
           <h2 className="text-4xl font-heading font-bold mb-12 text-center">Главные праздники</h2>
           <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
             {holidays.map((holiday, idx) => (
-              <Card key={idx} className="border-l-4 border-l-primary hover:shadow-lg transition-all">
+              <Card key={idx}>
                 <CardContent className="p-6">
-                  <div className="flex items-start gap-4">
-                    <div className="p-3 bg-primary/10 rounded-lg">
-                      <Icon name="Calendar" size={24} className="text-primary" />
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-heading font-bold mb-1">{holiday.name}</h3>
-                      <Badge variant="secondary" className="mb-3">{holiday.date}</Badge>
-                      <p className="text-muted-foreground">{holiday.description}</p>
-                    </div>
-                  </div>
+                  <h3 className="text-xl font-heading font-bold mb-2">{holiday.name}</h3>
+                  <p className="text-sm font-semibold mb-2">{holiday.date}</p>
+                  <p>{holiday.description}</p>
                 </CardContent>
               </Card>
             ))}
@@ -412,15 +446,21 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="dream" className="py-16 px-4 bg-gradient-to-br from-primary/10 via-secondary/10 to-accent/10">
-        <div className="container mx-auto max-w-4xl animate-fade-in">
+      <section id="dream" className="py-16 px-4 relative">
+        <div className="absolute inset-0 z-0">
+          <img 
+            src="https://cdn.poehali.dev/projects/453e926c-caed-4d4b-a2b0-7ead4278a171/files/6d0c0797-706d-4214-a2a3-b5cf3bfb4ae2.jpg"
+            alt="Background"
+            className="w-full h-full object-cover"
+            style={{ filter: 'blur(8px)' }}
+          />
+          <div className="absolute inset-0 bg-white/80" />
+        </div>
+        <div className="container mx-auto max-w-4xl relative z-10">
           <div className="text-center mb-8">
-            <div className="inline-block p-4 bg-gradient-to-br from-primary via-secondary to-accent rounded-full mb-6">
-              <Icon name="Heart" size={48} className="text-white" />
-            </div>
             <h2 className="text-4xl font-heading font-bold mb-6">Почему Сингапур — моя мечта?</h2>
           </div>
-          <Card className="border-2 border-primary/30">
+          <Card>
             <CardContent className="p-8 text-lg leading-relaxed space-y-4">
               <p>
                 Сингапур для меня — это воплощение идеального баланса между традициями и инновациями, природой и урбанистикой. Это место, где можно прогуляться по футуристическим садам Gardens by the Bay, а через час оказаться в историческом квартале с колониальной архитектурой.
