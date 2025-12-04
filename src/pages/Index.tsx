@@ -184,31 +184,41 @@ const Index = () => {
             </Card>
           </div>
 
-          <div className="mt-12">
-            <h3 className="text-3xl font-heading font-bold mb-8 text-center">Полезные ссылки</h3>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {links.map((linkGroup, idx) => (
-                <Card key={idx}>
-                  <CardContent className="p-6">
-                    <h4 className="font-heading font-semibold text-lg mb-4">
+          <div className="mt-16 py-16 px-4 relative rounded-3xl overflow-hidden">
+            <div className="absolute inset-0 z-0">
+              <img 
+                src="https://cdn.poehali.dev/projects/453e926c-caed-4d4b-a2b0-7ead4278a171/files/18bee093-cc36-4ff8-87ca-57a6b47b058c.jpg"
+                alt="Background"
+                className="w-full h-full object-cover"
+                style={{ filter: 'blur(3px) brightness(0.7)' }}
+              />
+            </div>
+            <div className="relative z-10">
+              <h3 className="text-4xl md:text-5xl font-heading font-bold mb-12 text-center text-white" style={{ textShadow: '2px 2px 8px rgba(0,0,0,0.8)' }}>
+                ПОЛЕЗНЫЕ ССЫЛКИ
+              </h3>
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {links.map((linkGroup, idx) => (
+                  <div key={idx} className="text-white" style={{ textShadow: '1px 1px 4px rgba(0,0,0,0.8)' }}>
+                    <h4 className="font-heading font-bold text-xl mb-4">
                       {linkGroup.category}
                     </h4>
-                    <div className="space-y-2">
+                    <div className="space-y-3">
                       {linkGroup.items.map((link, linkIdx) => (
                         <a
                           key={linkIdx}
                           href={link.url}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="flex items-center gap-2 text-sm hover:underline"
+                          className="block text-white hover:text-gray-200 transition-colors underline"
                         >
-                          <span>{link.name}</span>
+                          {link.name}
                         </a>
                       ))}
                     </div>
-                  </CardContent>
-                </Card>
-              ))}
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
 
