@@ -251,221 +251,215 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="developer" className="py-16 px-4 relative">
+      <section id="developer" className="py-20 px-4 relative min-h-[60vh] flex items-center">
         <div className="absolute inset-0 z-0">
           <img 
             src="https://cdn.poehali.dev/projects/453e926c-caed-4d4b-a2b0-7ead4278a171/files/6d0c0797-706d-4214-a2a3-b5cf3bfb4ae2.jpg"
             alt="Background"
             className="w-full h-full object-cover"
-            style={{ filter: 'blur(5px) brightness(1.1)' }}
+            style={{ filter: 'blur(3px) brightness(0.7)' }}
           />
-          <div className="absolute inset-0 bg-white/65" />
         </div>
         <div className="container mx-auto max-w-4xl relative z-10">
           <div className="text-center">
-            <h2 className="text-4xl font-heading font-bold mb-6">О разработчике</h2>
-            <Card className="text-left">
-              <CardContent className="p-8">
-                <p className="text-lg mb-4">
-                  <strong>Разработчик:</strong> Захар Куратов
-                </p>
-                <p className="text-lg mb-4">
-                  <strong>Учебное заведение:</strong> Хакасский государственный университет
-                </p>
-                <p className="text-lg">
-                  <strong>Группа:</strong> 225
-                </p>
-              </CardContent>
-            </Card>
+            <h2 className="text-5xl md:text-6xl font-heading font-bold mb-12 text-white" style={{ textShadow: '2px 2px 8px rgba(0,0,0,0.8)' }}>
+              О РАЗРАБОТЧИКЕ
+            </h2>
+            <div className="text-white text-lg space-y-4" style={{ textShadow: '1px 1px 4px rgba(0,0,0,0.8)' }}>
+              <p>
+                <strong>Разработчик:</strong> Захар Куратов
+              </p>
+              <p>
+                <strong>Учебное заведение:</strong> Хакасский государственный университет
+              </p>
+              <p>
+                <strong>Группа:</strong> 225
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
-      <section id="info" className="py-16 px-4 relative">
+      <section id="info" className="py-20 px-4 relative min-h-screen flex items-center">
         <div className="absolute inset-0 z-0">
           <img 
             src="https://cdn.poehali.dev/projects/453e926c-caed-4d4b-a2b0-7ead4278a171/files/2367590a-f601-46fb-9d8b-68d2f95598b8.jpg"
             alt="Background"
             className="w-full h-full object-cover"
-            style={{ filter: 'blur(5px) brightness(1.1)' }}
+            style={{ filter: 'blur(3px) brightness(0.7)' }}
           />
-          <div className="absolute inset-0 bg-white/65" />
         </div>
         <div className="container mx-auto max-w-4xl relative z-10">
-          <h2 className="text-4xl font-heading font-bold mb-8 text-center">Исторические сведения</h2>
-          <Card>
-            <CardContent className="p-8 space-y-4 text-lg leading-relaxed">
-              <p>
-                <strong>Сингапур</strong> — город-государство в Юго-Восточной Азии, основанный в 1819 году сэром Стэмфордом Раффлзом. С момента обретения независимости в 1965 году Сингапур превратился из небольшого торгового порта в один из самых развитых и богатых городов мира.
-              </p>
-              <p>
-                Благодаря стратегическому расположению на перекрестке торговых путей, Сингапур стал важным финансовым центром Азии. Сегодня это многонациональное государство, где гармонично сосуществуют китайская, малайская, индийская и европейская культуры.
-              </p>
-              <p>
-                Сингапур известен своей чистотой, безопасностью, высоким уровнем жизни и впечатляющей современной архитектурой, соседствующей с историческими районами и природными заповедниками.
-              </p>
-            </CardContent>
-          </Card>
+          <h2 className="text-5xl md:text-6xl font-heading font-bold mb-12 text-center text-white" style={{ textShadow: '2px 2px 8px rgba(0,0,0,0.8)' }}>
+            ИСТОРИЯ СИНГАПУРА
+          </h2>
+          <div className="text-white text-lg leading-relaxed space-y-6" style={{ textShadow: '1px 1px 4px rgba(0,0,0,0.8)' }}>
+            <p>
+              <strong>Сингапур</strong> — островное город-государство в Юго-Восточной Азии, отделённое от южной оконечности Малаккского полуострова узким Джохорским проливом.
+            </p>
+            <p>
+              Основанный в 1819 году Стамфордом Раффлзом как торговый пост Британской Ост-Индской компании, Сингапур был одной из самых важных коммерческих и военных баз Британской империи.
+            </p>
+            <p>
+              После обретения независимости в 1965 году, Сингапур за несколько десятилетий превратился из развивающейся страны в высокоразвитое государство, став одним из «азиатских тигров».
+            </p>
+            <p>
+              Сегодня Сингапур — <strong>глобальный финансовый центр</strong>, один из самых важных портов в мире и пример удивительного экономического чуда, совершенного всего за полвека.
+            </p>
+          </div>
         </div>
       </section>
 
-      <section id="cities" className="py-16 px-4 relative">
+      <section id="cities" className="py-20 px-4 relative min-h-screen flex items-center">
         <div className="absolute inset-0 z-0">
           <img 
             src="https://cdn.poehali.dev/projects/453e926c-caed-4d4b-a2b0-7ead4278a171/files/18bee093-cc36-4ff8-87ca-57a6b47b058c.jpg"
             alt="Background"
             className="w-full h-full object-cover"
-            style={{ filter: 'blur(5px) brightness(1.1)' }}
+            style={{ filter: 'blur(3px) brightness(0.7)' }}
           />
-          <div className="absolute inset-0 bg-white/65" />
         </div>
         <div className="container mx-auto relative z-10">
-          <h2 className="text-4xl font-heading font-bold mb-12 text-center">Города для посещения</h2>
+          <h2 className="text-5xl md:text-6xl font-heading font-bold mb-12 text-center text-white" style={{ textShadow: '2px 2px 8px rgba(0,0,0,0.8)' }}>
+            ГОРОДА ДЛЯ ПОСЕЩЕНИЯ
+          </h2>
           <div className="grid md:grid-cols-3 gap-8">
             {cities.map((city, idx) => (
-              <Card key={idx}>
-                <CardContent className="p-6">
-                  <h3 className="text-2xl font-heading font-bold mb-4">{city.name}</h3>
-                  <p className="mb-6">{city.description}</p>
-                  <div>
-                    <p className="font-semibold text-sm mb-2">Достопримечательности:</p>
-                    <ul className="list-disc list-inside space-y-1">
-                      {city.attractions.map((attraction, aIdx) => (
-                        <li key={aIdx} className="text-sm">{attraction}</li>
-                      ))}
-                    </ul>
-                  </div>
-                </CardContent>
-              </Card>
+              <div key={idx} className="text-white space-y-4" style={{ textShadow: '1px 1px 4px rgba(0,0,0,0.8)' }}>
+                <h3 className="text-3xl font-heading font-bold">{city.name}</h3>
+                <p className="text-lg">{city.description}</p>
+                <div>
+                  <p className="font-semibold mb-2">Достопримечательности:</p>
+                  <ul className="list-disc list-inside space-y-1">
+                    {city.attractions.map((attraction, aIdx) => (
+                      <li key={aIdx}>{attraction}</li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section id="cuisine" className="py-16 px-4 relative">
+      <section id="cuisine" className="py-20 px-4 relative min-h-screen flex items-center">
         <div className="absolute inset-0 z-0">
           <img 
             src="https://cdn.poehali.dev/projects/453e926c-caed-4d4b-a2b0-7ead4278a171/files/6d0c0797-706d-4214-a2a3-b5cf3bfb4ae2.jpg"
             alt="Background"
             className="w-full h-full object-cover"
-            style={{ filter: 'blur(5px) brightness(1.1)' }}
+            style={{ filter: 'blur(3px) brightness(0.7)' }}
           />
-          <div className="absolute inset-0 bg-white/65" />
         </div>
         <div className="container mx-auto relative z-10">
-          <h2 className="text-4xl font-heading font-bold mb-12 text-center">Кухня Сингапура</h2>
-          <div className="max-w-4xl mx-auto mb-8">
-            <p className="text-lg text-center">
+          <h2 className="text-5xl md:text-6xl font-heading font-bold mb-12 text-center text-white" style={{ textShadow: '2px 2px 8px rgba(0,0,0,0.8)' }}>
+            КУХНЯ СИНГАПУРА
+          </h2>
+          <div className="max-w-4xl mx-auto mb-12">
+            <p className="text-lg text-center text-white" style={{ textShadow: '1px 1px 4px rgba(0,0,0,0.8)' }}>
               Сингапурская кухня — это уникальное сочетание китайских, малайских, индийских и европейских кулинарных традиций. Хокер-центры (hawker centres) — главные места, где можно попробовать настоящую уличную еду.
             </p>
           </div>
-          <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {dishes.map((dish, idx) => (
-              <Card key={idx}>
-                <CardContent className="p-6">
-                  <h3 className="text-xl font-heading font-bold mb-2">{dish.name}</h3>
-                  <p className="text-sm">{dish.description}</p>
-                </CardContent>
-              </Card>
+              <div key={idx} className="text-white" style={{ textShadow: '1px 1px 4px rgba(0,0,0,0.8)' }}>
+                <h3 className="text-2xl font-heading font-bold mb-2">{dish.name}</h3>
+                <p className="text-lg">{dish.description}</p>
+              </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section id="culture" className="py-16 px-4 relative">
+      <section id="culture" className="py-20 px-4 relative min-h-screen flex items-center">
         <div className="absolute inset-0 z-0">
           <img 
             src="https://cdn.poehali.dev/projects/453e926c-caed-4d4b-a2b0-7ead4278a171/files/2367590a-f601-46fb-9d8b-68d2f95598b8.jpg"
             alt="Background"
             className="w-full h-full object-cover"
-            style={{ filter: 'blur(5px) brightness(1.1)' }}
+            style={{ filter: 'blur(3px) brightness(0.7)' }}
           />
-          <div className="absolute inset-0 bg-white/65" />
         </div>
         <div className="container mx-auto max-w-4xl relative z-10">
-          <h2 className="text-4xl font-heading font-bold mb-8 text-center">Музыка и кинематограф</h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            <Card>
-              <CardContent className="p-8">
-                <h3 className="text-2xl font-heading font-bold mb-4">Музыка</h3>
-                <p className="leading-relaxed">
-                  Сингапурская музыкальная сцена разнообразна: от традиционных китайских и малайских мелодий до современного поп-рока и электронной музыки. Популярные артисты: Stefanie Sun, JJ Lin, The Sam Willows.
-                </p>
-              </CardContent>
-            </Card>
+          <h2 className="text-5xl md:text-6xl font-heading font-bold mb-12 text-center text-white" style={{ textShadow: '2px 2px 8px rgba(0,0,0,0.8)' }}>
+            МУЗЫКА И КИНЕМАТОГРАФ
+          </h2>
+          <div className="grid md:grid-cols-2 gap-12">
+            <div className="text-white space-y-4" style={{ textShadow: '1px 1px 4px rgba(0,0,0,0.8)' }}>
+              <h3 className="text-3xl font-heading font-bold">Музыка</h3>
+              <p className="text-lg leading-relaxed">
+                Сингапурская музыкальная сцена разнообразна: от традиционных китайских и малайских мелодий до современного поп-рока и электронной музыки. Популярные артисты: Stefanie Sun, JJ Lin, The Sam Willows.
+              </p>
+            </div>
 
-            <Card>
-              <CardContent className="p-8">
-                <h3 className="text-2xl font-heading font-bold mb-4">Кинематограф</h3>
-                <p className="leading-relaxed">
-                  Сингапурское кино известно такими фильмами как "Crazy Rich Asians" (2018). Ежегодно проводится Singapore International Film Festival, привлекающий режиссеров со всего мира.
-                </p>
-              </CardContent>
-            </Card>
+            <div className="text-white space-y-4" style={{ textShadow: '1px 1px 4px rgba(0,0,0,0.8)' }}>
+              <h3 className="text-3xl font-heading font-bold">Кинематограф</h3>
+              <p className="text-lg leading-relaxed">
+                Сингапурское кино известно такими фильмами как "Crazy Rich Asians" (2018). Ежегодно проводится Singapore International Film Festival, привлекающий режиссеров со всего мира.
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
-      <section id="holidays" className="py-16 px-4 relative">
+      <section id="holidays" className="py-20 px-4 relative min-h-screen flex items-center">
         <div className="absolute inset-0 z-0">
           <img 
             src="https://cdn.poehali.dev/projects/453e926c-caed-4d4b-a2b0-7ead4278a171/files/18bee093-cc36-4ff8-87ca-57a6b47b058c.jpg"
             alt="Background"
             className="w-full h-full object-cover"
-            style={{ filter: 'blur(5px) brightness(1.1)' }}
+            style={{ filter: 'blur(3px) brightness(0.7)' }}
           />
-          <div className="absolute inset-0 bg-white/65" />
         </div>
         <div className="container mx-auto relative z-10">
-          <h2 className="text-4xl font-heading font-bold mb-12 text-center">Главные праздники</h2>
-          <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+          <h2 className="text-5xl md:text-6xl font-heading font-bold mb-12 text-center text-white" style={{ textShadow: '2px 2px 8px rgba(0,0,0,0.8)' }}>
+            ГЛАВНЫЕ ПРАЗДНИКИ
+          </h2>
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {holidays.map((holiday, idx) => (
-              <Card key={idx}>
-                <CardContent className="p-6">
-                  <h3 className="text-xl font-heading font-bold mb-2">{holiday.name}</h3>
-                  <p className="text-sm font-semibold mb-2">{holiday.date}</p>
-                  <p>{holiday.description}</p>
-                </CardContent>
-              </Card>
+              <div key={idx} className="text-white space-y-2" style={{ textShadow: '1px 1px 4px rgba(0,0,0,0.8)' }}>
+                <h3 className="text-2xl font-heading font-bold">{holiday.name}</h3>
+                <p className="text-lg font-semibold">{holiday.date}</p>
+                <p className="text-lg">{holiday.description}</p>
+              </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section id="dream" className="py-16 px-4 relative">
+      <section id="dream" className="py-20 px-4 relative min-h-screen flex items-center">
         <div className="absolute inset-0 z-0">
           <img 
             src="https://cdn.poehali.dev/projects/453e926c-caed-4d4b-a2b0-7ead4278a171/files/6d0c0797-706d-4214-a2a3-b5cf3bfb4ae2.jpg"
             alt="Background"
             className="w-full h-full object-cover"
-            style={{ filter: 'blur(5px) brightness(1.1)' }}
+            style={{ filter: 'blur(3px) brightness(0.7)' }}
           />
-          <div className="absolute inset-0 bg-white/65" />
         </div>
         <div className="container mx-auto max-w-4xl relative z-10">
-          <div className="text-center mb-8">
-            <h2 className="text-4xl font-heading font-bold mb-6">Почему Сингапур — моя мечта?</h2>
+          <div className="text-center mb-12">
+            <h2 className="text-5xl md:text-6xl font-heading font-bold text-white" style={{ textShadow: '2px 2px 8px rgba(0,0,0,0.8)' }}>
+              ПОЧЕМУ СИНГАПУР — МОЯ МЕЧТА?
+            </h2>
           </div>
-          <Card>
-            <CardContent className="p-8 text-lg leading-relaxed space-y-4">
-              <p>
-                Сингапур для меня — это воплощение идеального баланса между традициями и инновациями, природой и урбанистикой. Это место, где можно прогуляться по футуристическим садам Gardens by the Bay, а через час оказаться в историческом квартале с колониальной архитектурой.
-              </p>
-              <p>
-                Меня восхищает, как в этом небольшом городе-государстве гармонично уживаются разные культуры, религии и традиции. Сингапур — это страна возможностей, где чистота, безопасность и высокие технологии создают комфортную среду для жизни и путешествий.
-              </p>
-              <p>
-                Особенно привлекает возможность попробовать аутентичную азиатскую кухню в хокер-центрах, посетить знаменитый ботанический сад (объект ЮНЕСКО) и увидеть ночное шоу у Marina Bay Sands. Сингапур — это мечта, которую хочется осуществить!
-              </p>
-            </CardContent>
-          </Card>
+          <div className="text-white text-lg leading-relaxed space-y-6" style={{ textShadow: '1px 1px 4px rgba(0,0,0,0.8)' }}>
+            <p>
+              Сингапур для меня — это воплощение идеального баланса между традициями и инновациями, природой и урбанистикой. Это место, где можно прогуляться по футуристическим садам Gardens by the Bay, а через час оказаться в историческом квартале с колониальной архитектурой.
+            </p>
+            <p>
+              Меня восхищает, как в этом небольшом городе-государстве гармонично уживаются разные культуры, религии и традиции. Сингапур — это страна возможностей, где чистота, безопасность и высокие технологии создают комфортную среду для жизни и путешествий.
+            </p>
+            <p>
+              Особенно привлекает возможность попробовать аутентичную азиатскую кухню в хокер-центрах, посетить знаменитый ботанический сад (объект ЮНЕСКО) и увидеть ночное шоу у Marina Bay Sands. Сингапур — это мечта, которую хочется осуществить!
+            </p>
+          </div>
         </div>
       </section>
 
-      <footer className="bg-gradient-to-r from-primary via-secondary to-accent text-white py-12 px-4">
+      <footer className="bg-gray-900 text-white py-12 px-4">
         <div className="container mx-auto text-center">
           <h3 className="text-2xl font-heading font-bold mb-4">Сингапур — страна мечты</h3>
-          <p className="text-white/90 mb-6">Разработано студентом ХГУ Захаром Куратовым, группа 225</p>
+          <p className="text-gray-300 mb-6">Разработано студентом ХГУ Захаром Куратовым, группа 225</p>
           <div className="flex justify-center gap-4">
             {sections.slice(0, 4).map((section) => (
               <Button
